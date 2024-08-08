@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --white: #fff;
+    --black: #000;
+    --fondoBlack: #212121;
+    --greenGrinch: #cbf22e;
+    --lg: 70px;
+    --md: 20px;
+    --sm: 10px;
+    --titles: 'Montserrat', sans-serif;
+    --text:'Poppins', sans-serif;
+
+    
+}
+
+body{
+    background-color: var(--fondoBlack);
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+.navegacion {
+    width: 100%;
+    background-color: var(--fondo);
+    text-align: end;
+    padding: 10px;
+    border: 3px solid var(--greenGrinch);
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Alinear los elementos verticalmente */
+    box-sizing: border-box;
+}
+
+.navegacion img {
+    margin: 0 30px;
+    width: 250px; /* Ajusta el ancho según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+nav p { 
+    color: var(--white);
+    font-size: var(--md);
+    margin: 0px; /* Asegúrate de que no haya margen */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 100px;
+    display: flex;
+    align-items: center; /* Alinear los elementos verticalmente */
+}
+
+nav li {
+    cursor: pointer;
+    margin-left: 50px; /* Espacio entre los elementos del menú */
+}
+
+nav li:first-child {
+    margin-left: 0; /* Quitar el margen izquierdo del primer elemento */
+}
+
+nav li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--md);
+    color: var(--white);
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--greenGrinch);
+}
+
+#presentacion {
+    padding: 20px;
+    background-color: #2b2b2b; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+}
+
+#presentacion h1 {
+    font-size: var(--lg);
+    font-family: var(--titles);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#presentacion .soy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#presentacion p {
+    font-family: var(--text);
+    font-size: var(--md);
+    line-height: 1.6;
+    flex: 1;
+    margin-right: 20px;
+}
+
+#presentacion .diego {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+#presentacion img {
+    width: 50px;
+    height: auto;
+    flex-shrink: 0;
+}
